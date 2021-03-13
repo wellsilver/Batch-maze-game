@@ -1,0 +1,16 @@
+Mapdesignation
+000000000
+0       0
+0--   --0
+0|     |0
+0-------0
+0       0
+000000000
+
+
+Story:
+
+There is a key here
+
+Possible moves:
+Up, Left(grab)
