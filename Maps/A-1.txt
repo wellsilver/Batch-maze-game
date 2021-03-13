@@ -1,0 +1,14 @@
+A1
+000000000
+0       0
+0--- ---0
+0      |0
+0-------0
+0       0
+000000000
+
+Story:
+Coming near here makes you hungry. You think its a smell.
+
+Possible moves:
+Left, Up
