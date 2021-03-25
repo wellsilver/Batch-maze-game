@@ -1,3 +1,4 @@
+:: Home
 @echo off
 echo Loading...
 cd maps
@@ -9,10 +10,10 @@ if %input% == y goto help
 if %input% == Y goto help
 if %input% == Yes goto help
 goto menu
+:: home/
 
 
-
-
+:: help
 :help
 cls
 echo.
@@ -52,7 +53,7 @@ goto menu
 
 
 
-
+::tutorial
 :menu
 cls
 echo Its time to go to the maze! You have your camping gear ready and its time to go inside.
@@ -66,6 +67,30 @@ cls
 echo Press any key to begin the game
 pause >nul
 goto a2
+
+
+:: TEMPLATE:
+
+:: :a2
+:: mode con: cols=13 lines=30
+:: cls
+:: type MAPHERE.txt
+:: echo.
+:: echo.
+:: set /p input=Next:
+
+:: REM check text
+
+:: if %input% == right goto 
+:: if %input% == left goto 
+:: if %input% == down goto 
+:: if %input% == up goto 
+:: if %input% == help goto 
+:: goto a1
+
+
+:: ACTUAL GAMEPLAY
+
 
 :a2_forwards
 echo A wall is in your way.
