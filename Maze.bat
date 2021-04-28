@@ -9,6 +9,7 @@ set /p input=Input:
 if %input% == y goto help
 if %input% == Y goto help
 if %input% == Yes goto help
+if %input% == yes goto help
 goto menu
 :: home/
 
