@@ -42,12 +42,6 @@ echo To deny:   n (no caps)
 echo.
 pause
 cls
-echo.
-echo This game was made in a script created to automate the command line on windows. 
-echo.
-echo It is not meant to do anything more than that.
-pause
-cls
 echo This may have reset your progress.
 pause
 goto menu
