@@ -112,7 +112,7 @@ if %input% == left goto a3
 if %input% == down goto a2_back
 if %input% == up goto a2_forwards
 if %input% == help goto help
-goto a1
+goto a2
 
 :a3_escape
 cls
@@ -159,7 +159,7 @@ REM check text
 if %input% == right goto a1_wall
 if %input% == left goto a2
 if %input% == down goto a1_wall
-if %input% == up goto B1
+if %input% == up goto B1'
 if %input% == help goto help
 goto a1
 
@@ -209,8 +209,24 @@ if %input% == left goto a1_wall
 if %input% == down goto a1
 if %input% == up goto b1_grab
 if %input% == help goto help
-goto a1
+goto b1
 
+:b2
+mode con: cols=13 lines=30
+cls
+type b-2.txt
+echo.
+echo.
+set /p input=Next:
+
+REM check text
+
+if %input% == right goto a1_wall
+if %input% == left goto a1_wall
+if %input% == down goto a1
+if %input% == up goto b1_grab
+if %input% == help goto help
+goto b1
 
 
 
