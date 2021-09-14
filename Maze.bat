@@ -197,7 +197,8 @@ goto b1
 :b1
 mode con: cols=13 lines=30
 cls
-type b-1.txt
+type b-1.txt 
+REM 200 lines lets goooo
 echo.
 echo.
 set /p input=Next:
