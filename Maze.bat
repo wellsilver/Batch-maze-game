@@ -186,12 +186,15 @@ if %input% == up goto b5
 if %input% == help goto help
 goto a5
 
+REM A line
+REM ------------------
+REM B line
+
 :b1_grab
 cls
 echo You got a key!
 pause
 goto b1
-
 
 
 :b1
@@ -211,6 +214,12 @@ if %input% == down goto a1
 if %input% == up goto b1_grab
 if %input% == help goto help
 goto b1
+:b2_wall
+echo.
+echo you ran into a wall
+echo.
+pause
+goto b2
 
 :b2
 mode con: cols=13 lines=30
@@ -222,12 +231,12 @@ set /p input=Next:
 
 REM check text
 
-if %input% == right goto a1_wall
-if %input% == left goto a1_wall
-if %input% == down goto a1
-if %input% == up goto b1_grab
+if %input% == right goto b2_wall
+if %input% == left goto b3
+if %input% == down goto b2_wall
+if %input% == up goto c2
 if %input% == help goto help
-goto b1
+goto b2
 
 
 
@@ -251,4 +260,5 @@ echo I think there was a error lol
 echo Just execute it again hope it wont happen
 echo I have no idea how to create error logs.
 echo Actually I do but im too lazy to read up on how to detect what error happened and all that.
+echo deal with it
 pause >nul
