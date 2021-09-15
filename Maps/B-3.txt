@@ -1,13 +1,14 @@
-Mapdesignation
+B3
 000000000
 0       0
-0-------0
-0|     |0
-0-------0
+0--   --0
+0|      0
+0--   --0
 0       0
 000000000
 
 
-Story:(OPTIONAL)
+
 
 Possible moves:
+up right down
