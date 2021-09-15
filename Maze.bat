@@ -248,7 +248,7 @@ goto b3
 :b3
 mode con: cols=13 lines=30
 cls
-type b-2.txt
+type b-3.txt
 echo.
 echo.
 set /p input=Next:
@@ -263,8 +263,29 @@ if %input% == help goto help
 goto b3
 
 
+:b4_wall
+echo.
+echo you ran into a wall
+echo.
+pause
+goto b4
 
+:b4
+mode con: cols=13 lines=30
+cls
+type b-4.txt
+echo.
+echo.
+set /p input=Next:
 
+REM check text
+
+if %input% == right goto b4_wall
+if %input% == left goto b5
+if %input% == down goto b4_Wall
+if %input% == up goto c4
+if %input% == help goto help
+goto b4
 
 
 
