@@ -6,7 +6,6 @@ B1
 0|     |0
 0--- ---0
 000000000
-
 Story:
 its.. A large room???
 somethings in the middle..
