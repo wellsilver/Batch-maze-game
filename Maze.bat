@@ -297,7 +297,7 @@ goto b5
 :c1
 mode con: cols=13 lines=30
 cls
-type b-4.txt
+type c-1.txt
 echo.
 echo.
 set /p input=Next:
