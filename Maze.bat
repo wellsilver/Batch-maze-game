@@ -196,6 +196,11 @@ echo You got a key!
 pause
 goto b1
 
+:b1_wall
+cls
+echo There is a wall in your way
+pause
+goto b1
 
 :b1
 mode con: cols=13 lines=30
@@ -208,12 +213,14 @@ set /p input=Next:
 
 REM check text
 
-if %input% == right goto a1_wall
-if %input% == left goto a1_wall
+if %input% == right goto b1_wall
+if %input% == left goto b1_wall
 if %input% == down goto a1
-if %input% == up goto b1_grab
+if %input% == up goto b1_wall
+if %input% == grab goto b1_grab
 if %input% == help goto help
 goto b1
+
 :b2_wall
 echo.
 echo you ran into a wall
@@ -292,7 +299,7 @@ echo.
 echo you ran into a wall
 echo.
 pause
-goto b5 
+goto c1 
 
 :c1
 mode con: cols=13 lines=30
