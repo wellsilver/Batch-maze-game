@@ -330,6 +330,6 @@ cls
 echo I think there was a error lol
 echo Just execute it again hope it wont happen
 echo I have no idea how to create error logs.
-echo Actually I do but im too lazy to read up on how to detect what error happened and all that.
+echo Actually I do but im too lazy to read
 echo deal with it
 pause >nul
