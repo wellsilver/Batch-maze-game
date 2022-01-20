@@ -241,7 +241,7 @@ REM check text
 if %input% == right goto b2_wall
 if %input% == left goto b3
 if %input% == down goto b2_wall
-if %input% == up goto c2
+if %input% == up goto C2
 if %input% == help goto help
 goto b2
 
@@ -293,6 +293,29 @@ if %input% == down goto b4_Wall
 if %input% == up goto c4
 if %input% == help goto help
 goto b4
+:b5_wall
+echo.
+echo you ran into a wall
+echo.
+pause
+goto b5
+
+:b5
+mode con: cols=13 lines=30
+cls
+type b-4.txt
+echo.
+echo.
+set /p input=Next:
+
+REM check text
+
+if %input% == right goto b4
+if %input% == left goto b5_wall
+if %input% == down goto a5
+if %input% == up goto C5
+if %input% == help goto help
+goto b5
 
 :c1_wall
 echo.
@@ -311,18 +334,116 @@ set /p input=Next:
 
 REM check text
 
-if %input% == right goto b4_wall
-if %input% == left goto b5
-if %input% == down goto b4_Wall
-if %input% == up goto c4
+if %input% == right goto c1_wall
+if %input% == left goto C2
+if %input% == down goto c1_wall
+if %input% == up goto D1
 if %input% == help goto help
-goto b5
+goto c1
+:C2_wall
+echo.
+echo you ran into a wall
+echo Like, what were you thinking?
+echo.
+pause
+goto C2
+:C2_Special
+echo.
+echo You can break past
+echo The wall, if you
+echo Really want to.
+echo N/Y
+set /p input=$ 
+if %input% == y goto C1
+if %input% == n goto C2
+if %input% == Y goto C1
+if %input% == N goto C2
+goto C2_Special
+:C2
+mode con: cols=13 lines=30
+cls
+type C-2.txt
+echo.
+echo.
+set /p input=Next:
 
+REM check text
 
+if %input% == right goto C2_Special
+if %input% == left goto C3
+if %input% == down goto B2
+if %input% == up goto C2_wall
+if %input% == help goto help
+goto C2
+:C3_wall
+echo.
+echo you ran into a wall
+echo Like, what were you thinking?
+echo.
+pause
+goto C3
+:C3
+mode con: cols=13 lines=30
+cls
+type C-3.txt
+echo.
+echo.
+set /p input=Next:
 
+REM check text
 
+if %input% == right goto C2
+if %input% == left goto C3_wall
+if %input% == down goto B3
+if %input% == up goto D3
+if %input% == help goto help
+goto C3
+:C4_wall
+echo.
+echo you ran into a wall
+echo Like, what were you thinking?
+echo.
+pause
+goto C4
+:C4
+mode con: cols=13 lines=30
+cls
+type C-4.txt
+echo.
+echo.
+set /p input=Next:
 
+REM check text
 
+if %input% == right goto C4_wall
+if %input% == left goto C5
+if %input% == down goto B4
+if %input% == up goto C4_wall
+if %input% == help goto help
+goto C4
+:C5_wall
+echo.
+echo you ran into a wall
+echo Like, what were you thinking?
+echo.
+pause
+goto C5
+:C5
+mode con: cols=13 lines=30
+cls
+type C-5.txt
+echo.
+echo.
+set /p input=Next:
+
+REM check text
+
+if %input% == right goto C5_wall
+if %input% == left goto C5_wall
+if %input% == down goto B5
+if %input% == up goto C5_wall
+if %input% == help goto help
+goto C5
 
 
 :error
@@ -330,6 +451,7 @@ cls
 echo I think there was a error lol
 echo Just execute it again hope it wont happen
 echo I have no idea how to create error logs.
-echo Actually I do but im too lazy to read
-echo deal with it
+echo Actually I do but im too lazy to
+echo deal with the minor inconvenience
+echo you know what, im gonna shut up
 pause >nul

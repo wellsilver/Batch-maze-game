@@ -1,0 +1,14 @@
+C2
+000000000
+0       0
+0-------0
+0      |0
+0--   --0
+0       0
+000000000
+Story:
+The wall to the right looks like it was
+placed there temporarily
+
+Possible moves:
+Down, left

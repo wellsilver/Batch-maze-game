@@ -1,14 +1,14 @@
-B5
+C5
 000000000
 0       0
-0--   --0
-0|      0
+0-------0
+0|     |0
 0--   --0
 0       0
 000000000
+Story:
 
-
-
+Dead End
 
 Possible moves:
-down, right, up
+Down

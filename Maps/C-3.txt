@@ -1,4 +1,4 @@
-B5
+C3
 000000000
 0       0
 0--   --0
@@ -6,9 +6,9 @@ B5
 0--   --0
 0       0
 000000000
-
-
-
+Story:
+Theres a fallen twig here,
+Its really boring, like this maze
 
 Possible moves:
-down, right, up
+Up, Down, Right

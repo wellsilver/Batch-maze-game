@@ -1,4 +1,4 @@
-Mapdesignation
+B4
 000000000
 0       0
 0--   --0
@@ -6,9 +6,9 @@ Mapdesignation
 0-------0
 0       0
 000000000
-
-Story: The south wall looks like its boarded up.
-I touched it and its definitely boarded up with some wood but the heath is allready growing on it
+Story:
+The south wall looks
+like its boarded up.
 
 Possible moves:
-left up
+left, up
